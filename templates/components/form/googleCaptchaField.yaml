@@ -3,4 +3,3 @@ dialog: magnolia-recaptcha-v3:components/form/googleCaptchaField
 modelClass: info.magnolia.module.form.templates.components.FormFieldModel
 
 renderType: freemarker
-title: Google Captcha

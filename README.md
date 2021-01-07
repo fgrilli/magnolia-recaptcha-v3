@@ -23,7 +23,7 @@ Added Javascript Models Module
 ## Authors
 
 * **Patrick Diede** - *Initial work* - [BIT IT](https://github.com/bit-it)
-* **Richard Gange - *Updated for 6.2* - [MAGNOLIA](https://github.com/rgange)
+* **Richard Gange** - *Updated for 6.2* - [MAGNOLIA](https://github.com/rgange)
 
 See also the list of [contributors](https://github.com/bit-it) who participated in this project.
 

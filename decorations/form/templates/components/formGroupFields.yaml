@@ -1,0 +1,5 @@
+areas: 
+  fields: 
+    availableComponents:
+      formCaptcha: 
+        id: magnolia-recaptcha-v3:components/form/googleCaptchaField # Register CAPTCHA to FORM

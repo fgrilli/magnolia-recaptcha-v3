@@ -1,7 +1,6 @@
-templateScript: /light-module/templates/components/form/googleCaptchaField.ftl
-dialog: light-module:components/form/googleCaptchaField
+templateScript: /magnolia-recaptcha-v3/templates/components/form/googleCaptchaField.ftl
+dialog: magnolia-recaptcha-v3:components/form/googleCaptchaField
 modelClass: info.magnolia.module.form.templates.components.FormFieldModel
 
 renderType: freemarker
-title: googleCaptchaField
-description: googleCaptchaField
+title: Google Captcha

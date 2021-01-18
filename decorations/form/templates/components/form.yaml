@@ -1,0 +1,5 @@
+formProcessors:
+  recaptcha:
+    enabled: true
+    class: info.magnolia.module.jsmodels.form.JavascriptFormProcessor
+    formProcessorScriptPath: /magnolia-recaptcha-v3/templates/js/formProcessors/addRecaptcha.js

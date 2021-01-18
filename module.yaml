@@ -2,5 +2,6 @@ version: 6.2
 dependencies:
   core:
     version: 6.2/*
-  form: 2.5/*
+  form: 
+    version: 2.5/*
     

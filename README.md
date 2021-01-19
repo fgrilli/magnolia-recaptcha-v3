@@ -1,19 +1,10 @@
 # Magnolia Javascript Models - reCAPTCHA Version 3
 
-This is a repository with a form processor and it's reCAPTCHA logic for Magnolia.
+A fork of BIT IT's reCAPTCHA v3 updated for 6.2. Google's reCAPTCHA v3 returns a score for each request without user friction. The score is based on interactions with your site and enables you to take an appropriate action for your site. The module includes decorations for the form module so no assembly required. Simply make the form components available on your site. 
 
-## Getting Started
+## Documentation
 
-1. The module is setup to decorate the form module with the Google Captcha 
-2. Go to /templates/js/formProcessors/addRecaptcha.js change there "ADD YOUR RECAPTCHA V3 KEY HERE" to your secret key.
-4. Add the public key to the recaptcha component
-
-### Prerequisites
-
-```
-Running Magnolia CMS
-Added Javascript Models Module
-```
+* [reCAPTCHA v3](https://wiki.magnolia-cms.com/display/WIKI/reCAPTCHA+v3) - Magnolia Community Wiki
 
 ## Built With
 

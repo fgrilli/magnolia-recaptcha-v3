@@ -1,5 +1,11 @@
-formProcessors:
+formProcessors: !override
   recaptcha:
     enabled: true
     class: info.magnolia.module.jsmodels.form.JavascriptFormProcessor
     formProcessorScriptPath: /magnolia-recaptcha-v3/templates/js/formProcessors/addRecaptcha.js
+  sendContactEMail:
+    enabled: true
+  sendConfirmationEMail:
+    enabled: true
+  trackEMail:
+    enabled: true

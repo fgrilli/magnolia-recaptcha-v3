@@ -2,7 +2,7 @@ formProcessors: !override
   recaptcha:
     enabled: true
     class: info.magnolia.module.jsmodels.form.JavascriptFormProcessor
-    formProcessorScriptPath: /magnolia-recaptcha-v3/templates/js/formProcessors/addRecaptcha.js
+    formProcessorScriptPath: /magnolia-recaptcha-v3/templates/js/formProcessors/recaptcha.js
   sendContactEMail:
     enabled: true
   sendConfirmationEMail:

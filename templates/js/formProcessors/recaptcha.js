@@ -3,6 +3,8 @@
  * @constructor
  */
 var Processor = function () {
+    var ScriptEngine = Java.type("javax.script.ScriptEngine");
+    var ScriptEngineManager = Java.type("javax.script.ScriptEngineManager");
     var HttpClients = Java.type("org.apache.http.impl.client.HttpClients");
     var HttpPost = Java.type("org.apache.http.client.methods.HttpPost");
     var EntityUtils = Java.type("org.apache.http.util.EntityUtils");
@@ -17,9 +19,10 @@ var Processor = function () {
             var response = httpClient.execute(httpPost);
             var entity = response.getEntity();
             var returned_entity = EntityUtils.toString(entity, "utf-8");
-            var json = JSON.stringify(returned_entity);
-            var obj = JSON.parse(json);
-            if (obj.success && obj.score > 0.5) {
+            var manager = new ScriptEngineManager();
+            var engine = manager.getEngineByName("js");
+            var obj = engine.eval("(" + returned_entity + ")");
+            if (obj.success == true && obj.score > 0.5) {
                 return true;
             } else {
                 throw new Error("Bot detected!");

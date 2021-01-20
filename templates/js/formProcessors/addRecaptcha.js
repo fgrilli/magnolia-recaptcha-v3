@@ -1,5 +1,9 @@
 /**
  * Form processor that checks the captcha.
+ * 
+ * WARNING: This script requires https://mvnrepository.com/artifact/org.json/json to be installed.
+ * Use /templates/js/formProcessors/recpatcha.js if a adjusting the pom is not feasible. 
+ * 
  * @constructor
  */
 var Processor = function () {

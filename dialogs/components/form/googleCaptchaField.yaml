@@ -1,15 +1,24 @@
 form:
-  properties:
-    title:
-      $type: textField
-      i18n: true
-      required: true
-    controlName:
-      $type: hiddenField
-      defaultValue: "recaptcha-v3"
-    captchaSiteKey:
-      $type: textField
-      required: true
-    mandatory:
-      buttonLabel: ""
-      $type: checkBoxField
+  tabs:
+    tabMain:
+      fields:
+        title:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          i18n: true
+          required: true
+        controlName:
+          class: info.magnolia.ui.form.field.definition.HiddenFieldDefinition
+          type: String
+          defaultValue: "recaptcha-v3"
+        captchaSiteKey:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true
+        mandatory:
+          buttonLabel: ""
+          class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+          type: Boolean
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

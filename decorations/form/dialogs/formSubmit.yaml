@@ -1,0 +1,8 @@
+form: !override
+  tabs:
+    tabMain:
+      fields:
+        recaptchaSiteKey:
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          rows: 1
+          type: String
